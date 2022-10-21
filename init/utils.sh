@@ -17,7 +17,7 @@ getPythonVersion() {
         [[ $count -gt $maxPVer ]] && break
     done
     local ptn='s/Python (3\.[0-9]{1,2}\.[0-9]{1,2}).*/\1/g'
-    declare -gr pVer=python3.10
+    declare -gr pVer=python3
 }
 
 log() {
