@@ -5,7 +5,7 @@
 # Edited by Alicia
 
 declare -r minPVer=8
-declare -r maxPVer=10
+declare -r maxPVer=11
 
 getPythonVersion() {
     local -i count=$minPVer
@@ -37,11 +37,11 @@ quit() {
 }
 
 runPythonCode() {
-    python${pVer%.*} -c "$1"
+    python3.10 -c "$1"
 }
 
 runPythonModule() {
-    python${pVer%.*} -m "$@"
+    python3.10 -m "$@"
 }
 
 gitInit() {
